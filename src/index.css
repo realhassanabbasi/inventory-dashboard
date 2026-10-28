@@ -1,0 +1,154 @@
+/* Simple plain CSS, light and dark mode */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body.light {
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+body.dark {
+  background-color: #1a1a1a;
+  color: #f4f4f4;
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 8px 14px;
+  margin: 4px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+.metrics {
+  display: flex;
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.metric {
+  flex: 1;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  background-color: white;
+}
+
+body.dark .metric {
+  background-color: #2a2a2a;
+  border-color: #444;
+}
+
+.form {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+body.dark .form {
+  background-color: #2a2a2a;
+  border-color: #444;
+}
+
+.form input,
+.form select,
+.filters select {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.filters {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.filters label {
+  flex: 1;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+  background-color: white;
+}
+
+body.dark .card {
+  background-color: #2a2a2a;
+  border-color: #444;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  color: white;
+  font-size: 14px;
+}
+
+.badge.in {
+  background-color: #16a34a;
+}
+
+.badge.low {
+  background-color: #d97706;
+}
+
+.badge.out {
+  background-color: #dc2626;
+}
+
+.card-buttons {
+  margin-top: 10px;
+}
+
+.audit {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 20px;
+  background-color: white;
+}
+
+body.dark .audit {
+  background-color: #2a2a2a;
+  border-color: #444;
+}
+
+.toast {
+  background-color: #16a34a;
+  color: white;
+  padding: 8px;
+  border-radius: 6px;
+}
